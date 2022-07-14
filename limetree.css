@@ -1,0 +1,274 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: radial-gradient(circle at 10% 20%, rgb(50, 172, 109) 0%, rgb(209, 251, 155) 100.2%);
+
+}
+nav{
+  background-color: rgb(218, 235, 195);
+  height: 80px;
+  width: 100%;
+}
+label.Logo{
+  color: rgb(38, 141, 88);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 10px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #222831;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a:hover{
+  background: #ffe121 ;
+  transition: 0.02s;
+}
+@media(max-width: 500px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
+
+.items{
+  display: grid;
+  size: 0ch;
+}
+
+.container{
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding-left: 30px;
+  
+  
+}
+.item{
+  background: #222831;
+  color: azure;
+  padding: 30px;
+  text-align: center;
+}
+.lime{
+  padding-top: 50px;
+}
+.fline{
+  font-size: 40px;
+}
+.sline{
+  font-size: 30px;
+}
+.item:nth-of-type(1){
+  grid-column: 1/3;
+  min-height: 300px;
+  background:  url(./img/pic5.jpeg);
+  background-size: cover;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  color: #222831;
+  margin-top: 50px;
+
+  }
+  .item:nth-of-type(2){
+  grid-column: 3;
+  grid-row: 3;
+  grid-area: 1/3;
+  background-color: rgb(218, 235, 195);
+  color: rgb(50, 172, 109);
+  
+
+  }
+  
+  @media(max-width: 500px){
+    .container{
+      grid-template-columns: 1fr;
+    }
+  }
+  .ts{
+    color: #222831;
+  }
+  .pt{
+    color: #222831;
+    font-size: 23px;
+  }
+ .order:hover{
+  background: yellow ;
+  transition: 0.02s;
+  border-radius: 10px;
+  }
+  .menu {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .icon {
+    background: yellow;
+    padding: 8px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 3px rgba(46, 45, 45, 0.1);
+    color: #25282c;
+    font-size: 15px;
+  }
+  .icon:hover{
+    background-color: rgb(42, 243, 69);
+    transition: 0.02s;
+  }
+  
+.Salad {
+  background: #e8ebf0;
+ 
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  background-size: cover;
+  text-align: center;
+  padding-left: 150px;
+  height: 400px;
+}
+
+button{
+  background-color: rgb(50, 172, 109);
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  color: #25282c;
+}
+  
+button:hover{
+  background: yellow ;
+  transition: 0.02s;
+  
+}
+.specialsalad{
+  padding-left: 20px;
+  font-size: 20px;
+  
+}
+.imgr{
+  height: 200px;
+  width: 250px;
+  padding-left: 55px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.food{
+  text-align: center;
+  padding: 10px;
+  color: #222831;
+}
+.bestsellers h2 {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 2fr auto 2fr;
+  grid-gap: 10px;
+  align-items: center;
+  color: #4f4861;
+}
+
+.bestsellers h2:before{
+  display: flex;
+  content: "";
+  height: 10px;
+  background: linear-gradient( to var(--direction, left), rgb(255, 255, 0),transparent);
+}
+.bestsellers h2:after 
+{
+  display: flex;
+  content: "";
+  height: 10px;
+  background: linear-gradient(to var(--direction, left),rgb(255, 255, 0),transparent);
+  --direction: right;
+}
+.footer{
+  padding: 2rem 0 3rem 0;
+  background-color: #3b334e;
+  height: 40hv;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+.footer1{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.footer2{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.footer3{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.footer1 h2{
+  margin-bottom: 2rem;
+}
+.footer1 a{
+  color: aliceblue;
+  margin-bottom: 0.5rem;
+}
+.footer2 h2{
+  margin-bottom: 2rem;
+}
+.footer2 a{
+  color: aliceblue;
+  margin-bottom: 0.5rem;
+}
+.footer3 h2{
+  margin-bottom: 2rem;
+}
+.footer3 a{
+  color: aliceblue;
+  margin-bottom: 0.5rem;
+}
+
+.footer1 h2:hover{
+  color: yellow;
+  transition: 0.1s ease-out;
+}
+.footer2 h2:hover{
+  color: yellow;
+  transition: 0.1s ease-out;
+}
+
+.footer3 h2:hover{
+  color: yellow;
+  transition: 0.1s ease-out;
+}
+
+
+
+
+
+
